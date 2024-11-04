@@ -5,29 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <EditText
         android:id="@+id/editTexto"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="Digite seu nome"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editIdade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Digite a idade"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTexto" />
+
     <Button
         android:id="@+id/buttonToast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_button_toast"
+        android:layout_marginTop="16dp"
+        android:text="Exibir Toast"
         app:layout_constraintStart_toStartOf="@+id/editTexto"
-        app:layout_constraintTop_toBottomOf="@+id/editTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/editIdade" />
 
     <Button
         android:id="@+id/buttonTela2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_tela2"
+        android:layout_marginTop="8dp"
+        android:text="Tela 2"
         app:layout_constraintStart_toStartOf="@+id/buttonToast"
         app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
 </androidx.constraintlayout.widget.ConstraintLayout>
